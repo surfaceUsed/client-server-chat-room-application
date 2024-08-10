@@ -69,7 +69,7 @@ class Session implements Runnable {
             } finally {
 
                 this.server.removeClientSession(this);
-                System.err.println(MessageHandler.clientSessionEnded(this.clientUserName));
+                System.out.println(MessageHandler.clientSessionEnded(this.clientUserName));
                 terminateSession();
             }
 
